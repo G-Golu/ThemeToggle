@@ -1,9 +1,9 @@
-function Footer() {
+const Footer = () => {
   return (
     <footer className="footer">
-      © 2025 Theme Toggle. All rights reserved.
+      © 2025 ThemeToggle. All rights reserved.
     </footer>
   );
-}
+};
 
 export default Footer;
