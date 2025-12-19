@@ -1,0 +1,174 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* SMOOTH THEME TRANSITION */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* THEME */
+.light {
+  background: #f4f6fb;
+  color: #1a1a1a;
+  min-height: 100vh;
+}
+
+.dark {
+  background: #0b0b0b;
+  color: #f5f5f5;
+  min-height: 100vh;
+}
+
+
+/* CONTAINER (DESKTOP WIDTH) */
+.app-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+
+
+.hero h1 {
+  font-size: 52px;
+  margin-bottom: 18px;
+  letter-spacing: -1px;
+}
+
+.hero p {
+  font-size: 18px;
+  max-width: 620px;
+  opacity: 0.75;
+}
+
+
+
+
+
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  font-size: 22px;
+  background-color: #007bff;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+
+.footer {
+  text-align: center;
+  padding: 20px 0;
+  opacity: 0.7;
+}
+
+
+.navbar {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 18px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  backdrop-filter: blur(10px);
+}
+
+.dark .navbar {
+  background: rgba(18, 18, 18, 0.9);
+}
+
+.nav-logo {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+.nav-menu a:hover {
+  opacity: 1;
+}
+
+
+
+
+
+
+
+.hero {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #e9ecf1, #f7f9fc);
+}
+
+.dark .hero {
+  background: linear-gradient(135deg, #0f2027, #203a43);
+}
+
+.hero-card {
+  background: white;
+  padding: 60px;
+  max-width: 700px;
+  text-align: center;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.dark .hero-card {
+  background: #1e1e1e;
+}
+
+.hero-card h1 {
+  font-size: 44px;
+  margin-bottom: 20px;
+}
+
+.hero-card p {
+  font-size: 18px;
+  opacity: 0.75;
+  margin-bottom: 30px;
+}
+
+.hero-btn {
+  padding: 12px 28px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #007bff;
+  color: white;
+}
+
+
+
+.footer {
+  padding: 30px;
+  text-align: center;
+  font-size: 14px;
+  opacity: 0.7;
+}
