@@ -195,3 +195,9 @@
   color: #2563eb;
   font-weight: 600;
 }
+
+/* FORCE WHITE NAV LINKS IN DARK MODE */
+.dark .nav-links a {
+  color: rgb(253, 255, 255);
+  opacity: 1;
+}
