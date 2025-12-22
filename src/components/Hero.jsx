@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 const Hero = () => {
   return (
     <section className="hero-wrapper">
@@ -8,7 +9,9 @@ const Hero = () => {
           Build modern React applications with smooth theme switching,
           clean UI, and professional layout.
         </p>
+        <Link to = "/login">
         <button className="primary-btn">Get Started</button>
+        </Link>
       </div>
     </section>
   );

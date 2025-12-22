@@ -1,0 +1,159 @@
+/* Full page center */
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #eef1f5;
+}
+
+
+/* Card */
+.auth-box {
+   width: 380px;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+/* Tabs */
+.auth-tabs {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.tab {
+   width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  background: #b71c1c;
+  color: white;
+}
+
+.tab.active {
+   background: #2e7d32;
+}
+
+/* Heading */
+.auth-box h2 {
+  margin-bottom: 6px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Form */
+.auth-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-form label {
+  font-size: 14px;
+  margin-bottom: 6px;
+  margin-top: 10px;
+}
+
+.auth-form input {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background: #f0f3f8;
+  outline: none;
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Button */
+.submit-btn {
+  margin-top: 20px;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #222;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background: #000;
+}
+
+/* Forgot password */
+.forgot {
+  margin-top: 15px;
+  font-size: 13px;
+  text-align: center;
+}
+
+.forgot a {
+  color: #1976d2;
+  text-decoration: none;
+}
+
+.tab-link {
+  width: 50%;
+  text-decoration: none;
+}
+
+
+
+
+/* ===============================
+   🌙 DARK MODE INPUT FIX (FINAL)
+   =============================== */
+
+.dark .auth-form input {
+  background-color: #1f2937 !important; /* dark bg */
+  color: #ffffff !important;            /* clear text */
+  caret-color: #ffffff;                 /* cursor */
+  box-shadow: none !important;           /* remove blur */
+  border: 1px solid #374151;
+  font-weight: 500;
+}
+
+/* Placeholder clarity */
+.dark .auth-form input::placeholder {
+  color: #9ca3af;
+  opacity: 1;
+}
+
+/* Focus state */
+.dark .auth-form input:focus {
+  outline: none;
+  border-color: #4ade80;
+}
+
+/* Autofill fix (Chrome) */
+.dark .auth-form input:-webkit-autofill {
+  -webkit-text-fill-color: #ffffff !important;
+  box-shadow: 0 0 0 1000px #1f2937 inset !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+
+
+
+/* ===============================
+   🌙 DARK MODE LABEL FIX
+   =============================== */
+
+.auth-form label {
+  color: #374151;          /* light mode label */
+  font-weight: 500;
+}
+
+.dark .auth-form label {
+  color: #e5e7eb;          /* bright text in dark mode */
+}
+
+
+
