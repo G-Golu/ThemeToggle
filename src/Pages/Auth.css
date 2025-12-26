@@ -152,8 +152,27 @@
 }
 
 .dark .auth-form label {
-  color: #e5e7eb;          /* bright text in dark mode */
+  color: #f5f4f7;          /* bright text in dark mode */
 }
 
 
 
+/* ===============================
+   🌙 DARK MODE CARD FIX
+   =============================== */
+
+.dark .auth-box {
+  background-color: #060606;   /* dark card */
+}
+
+/* ===============================
+   🌙 DARK MODE HEADING FIX
+   =============================== */
+
+.dark .auth-box h2 {
+  color: #ffffff !important;   /* fully visible */
+}
+
+.dark .auth-box .subtitle {
+  color: #cbd5e1 !important;   /* readable text */
+}
